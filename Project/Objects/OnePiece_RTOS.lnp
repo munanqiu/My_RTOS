@@ -1,0 +1,9 @@
+--cpu Cortex-M3
+".\objects\main2.o"
+".\objects\list.o"
+".\objects\startup_armcm3.o"
+".\objects\system_armcm3.o"
+--strict --scatter ".\Objects\OnePiece_RTOS.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\OnePiece_RTOS.map" -o .\Objects\OnePiece_RTOS.axf
